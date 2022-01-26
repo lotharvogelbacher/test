@@ -1,0 +1,92 @@
+{
+  "metadata": {
+    "name": "City",
+    "asset_type": "data_asset",
+    "description": "",
+    "origin_country": "none",
+    "tags": [
+      "connected-data"
+    ],
+    "asset_category": "USER",
+    "created_at": "2022-01-26T16:35:47Z",
+    "created": 1643214947552,
+    "asset_id": "data_asset.City",
+    "asset_attributes": [
+      "data_asset"
+    ]
+  },
+  "entity": {
+    "data_asset": {
+      "dataset": true,
+      "mime_type": "application/octet-stream",
+      "columns": [
+        {
+          "name": "ID",
+          "type": {
+            "type": "integer",
+            "length": 10,
+            "scale": 0,
+            "nullable": false,
+            "signed": true
+          }
+        },
+        {
+          "name": "Name",
+          "type": {
+            "type": "char",
+            "length": 35,
+            "scale": 0,
+            "nullable": false,
+            "signed": false
+          }
+        },
+        {
+          "name": "CountryCode",
+          "type": {
+            "type": "char",
+            "length": 3,
+            "scale": 0,
+            "nullable": false,
+            "signed": false
+          }
+        },
+        {
+          "name": "District",
+          "type": {
+            "type": "char",
+            "length": 20,
+            "scale": 0,
+            "nullable": false,
+            "signed": false
+          }
+        },
+        {
+          "name": "Population",
+          "type": {
+            "type": "integer",
+            "length": 10,
+            "scale": 0,
+            "nullable": false,
+            "signed": true
+          }
+        }
+      ]
+    }
+  },
+  "attachments": [
+    {
+      "asset_type": "data_asset",
+      "name": "city",
+      "description": "remote",
+      "connection_id": "connection.CHUVMySQL",
+      "connection_path": "/world/city",
+      "is_partitioned": false,
+      "mime": "application/octet-stream",
+      "created_at": "2022-01-26T16:35:47Z",
+      "id": "dd03e5ea-54df-465c-8b52-3fbc2611797c",
+      "is_managed": false,
+      "is_referenced": false,
+      "is_remote": true
+    }
+  ]
+}
